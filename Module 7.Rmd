@@ -19,6 +19,12 @@ geometric_mean
 ## CHALLENGE 2
 ```{r sum of squares, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-sum_of_squares <- x[sum((x - mean(x))^2)]
+sum_of_squares <- function(x) {sum((x - mean(x))^2)}
 sum_of_squares(x)
+```
+## CHALLENGE 3
+```{r variance, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+variance <- function(x) {sum((x - mean(x))^2)/(length(x) - 1)}
+variance(x)
 ```
