@@ -25,6 +25,6 @@ sum_of_squares(x)
 ## CHALLENGE 3
 ```{r variance, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-variance <- function(x) {sum((x - mean(x))^2)/(length(x) - 1)}
-variance(x)
+sample_variance <- function(x) {sum((x - mean(x))^2)/(length(x) - 1)}
+sample_variance(x)
 ```
