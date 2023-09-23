@@ -51,4 +51,26 @@ op_sd <- function(x) {
      sqrt(pop_v(x))
 }
 pop_v(x)
+
+#or
+sample_sd <- function(x) {
+    sqrt(sample_v(x))
+}
+sample_sd(x)
+```
+## CHALLENGE 4
+```{r standard error, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+SE2 <- function(x) {
+    sqrt(var(x)/length(x))
+}
+SE2(x)
+# or
+SE1 <- function(x) {
+    sqrt(sample_v(x)/length(x))
+}
+SE1(x)
+#or
+library(sciplot)
+se(x)
 ```
